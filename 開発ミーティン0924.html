@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>会議インフォグラフィック（テストテスト）</title>
+  <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    :root{
+      --c1:#AACE35; /* ファッション-1 */
+      --c2:#2D957C; /* ファッション-2 */
+      --c3:#1DB8DE; /* ファッション-3 */
+      --c4:#F6F6F6; /* ファッション-4 */
+      --ink:#334155;
+      --sub:#475569;
+      --head:#1e40af;
+    }
+    body{margin:0;font-family:"BIZ UDPGothic",system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f6f6;color:#333;}
+    .wrap{max-width:1200px;margin:20px auto;padding:20px;}
+    header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;}
+    .title{font-size:32px;font-weight:bold;line-height:1.2;
+      background:linear-gradient(90deg, var(--c2), var(--c3));
+      -webkit-background-clip:text;background-clip:text;color:transparent;
+      display:flex;align-items:center;gap:12px;
+    }
+    .title img{width:52px;height:52px;flex:0 0 52px;}
+    .subtitle{font-size:16px;color:var(--sub);}
+    .meta{font-size:12px;color:#777;text-align:right;}
+    main{display:flex;flex-wrap:wrap;gap:16px;}
+    /* Card base (override skeleton to glassmorphism G2) */
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.72), rgba(255,255,255,0.60));
+      border-radius:12px;
+      box-shadow:0 4px 16px rgba(0,0,0,0.12);
+      padding:14px;flex:1 1 320px;position:relative;
+      border:1px solid rgba(29,184,222,0.25);
+      backdrop-filter:blur(8px);
+      -webkit-backdrop-filter:blur(8px);
+      transition:transform .24s ease, box-shadow .24s ease;
+    }
+    @supports not ((backdrop-filter: blur(8px))){
+      .card{background:rgba(255,255,255,0.92);border:1px solid rgba(29,184,222,0.25);box-shadow:0 4px 16px rgba(0,0,0,0.12);}
+    }
+    .card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.18);}
+    .card h3{margin-top:0;font-size:18px;color:var(--head);display:flex;align-items:center;gap:6px;}
+    .card p{font-size:14px;line-height:1.6;color:var(--ink);}
+    .card ul{margin:8px 0 0 0;padding-left:20px;color:var(--ink);}
+    .card li{margin:6px 0;}
+    .icon{font-family:"Material Icons";font-size:20px;color:var(--head);vertical-align:middle;}
+    /* Hand-drawn accents */
+    .sketch-box{border:2px dashed rgba(170,206,53,0.6);border-radius:10px;padding:8px;margin-top:8px;background:rgba(246,246,246,0.6);}
+    .marker{background:linear-gradient(90deg, rgba(170,206,53,0.25), rgba(29,184,222,0.25));padding:0 4px;border-radius:4px;}
+    .underline{background:linear-gradient(0deg, rgba(29,184,222,0.35) 0%, rgba(29,184,222,0.35) 40%, transparent 40%);font-weight:700;}
+    /* Connectors (placed between cards, not overlapping) */
+    .connector{flex-basis:100%;display:flex;align-items:center;gap:8px;margin:4px 0 8px;}
+    .connector .chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:#0f172a;background:rgba(45,149,124,0.10);border:1px solid rgba(45,149,124,0.35);border-radius:16px;padding:6px 10px;}
+    .connector .icon{font-size:16px;color:#0f766e;}
+    /* Emphasis bubbles (G3) */
+    .bubble{
+      background:linear-gradient(180deg, rgba(255,255,255,0.40), rgba(255,255,255,0.28));
+      border:1px solid rgba(170,206,53,0.5);
+      border-radius:12px;padding:10px;margin-top:10px;color:#0f172a;
+      backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+    }
+    /* Skeleton overrides keep for compatibility */
+    .card h3{margin-top:0;}
+    /* Accessibility contrast tweaks */
+    a{color:#0f766e;text-decoration:underline;}
+    /* Responsive adjustments */
+    @media (max-width:768px){
+      .title{font-size:26px;}
+      .subtitle{font-size:14px;}
+      .card{flex:1 1 100%;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <div class="title">
+          <img alt="公式ロゴ" src="https://raw.githubusercontent.com/kaitang0228/yy-svg-library/refs/heads/main/logo_transparent.svg">
+          会議インフォグラフィック
+        </div>
+        <div class="subtitle">議事録サマリー（音声認識・API・UI・ライセンス等の進捗共有）</div>
+      </div>
+      <div class="meta">
+        会議日程：2025/09/24 16:00（テストテスト）<br>
+        出典：未記載/不明
+      </div>
+    </header>
+    <main>
+      <section class="card">
+        <h3><span class="icon">analytics</span> 音声認識の状況</h3>
+        <ul>
+          <li><span class="underline">今月は過去最高</span>を記録（具体的な数値は未記載/不明）。</li>
+          <li>ただし<span class="marker">7月比の伸び率は小さい</span>との認識。</li>
+          <li>ダウンロード数の合計や内訳は未記載/不明。</li>
+        </ul>
+        <div class="sketch-box">
+          メモ：一部発言の数値や単位が不明（例：「100007cm間」など）。正確なデータは未記載/不明。
+        </div>
+      </section>
+
+      <section class="card">
+        <h3><span class="icon">speed</span> レイテンシー・エラー調査</h3>
+        <ul>
+          <li>エラー発生時刻の例：<span class="marker">9:08・9:07・9:04</span>（複数日）。</li>
+          <li>個別の回線要因よりも<span class="underline">サーバ側の問題</span>の可能性と想定。</li>
+          <li>追加調査を依頼中。タイムアウトの事象あり（詳細な原因は未記載/不明）。</li>
+        </ul>
+      </section>
+
+      <div class="connector">
+        <div class="chip"><span class="icon">arrow_forward</span> レイテンシー調査 → サーバ設定/インフラ見直しへ</div>
+      </div>
+
+      <section class="card">
+        <h3><span class="icon">paid</span> スピーチSDKと価格・問い合わせ</h3>
+        <ul>
+          <li>スピーチSDKの<span class="marker">価格問い合わせ</span>を実施（詳細未記載/不明）。</li>
+          <li><span class="underline">10品超</span>の処理でエラー発生の報告があり、改善対応を実施。</li>
+          <li>タイムアウトの発生理由は引き続き確認中。</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3><span class="icon">map</span> マップアプリ／ウィッシュリスト構想</h3>
+        <ul>
+          <li>ウィッシュリスト機能を検討中。<span class="marker">ユーザーリクエスト</span>を受け付ける案。</li>
+          <li>ウィッシュリストへの動画・コメントの掲載検討。サイトへの掲載可否を検討。</li>
+          <li>埋め込みリンク対応、<span class="underline">共通ストレージ</span>でのデータ登録を想定。主な動画プラットフォームは<span class="marker">YouTube</span>。</li>
+          <li>裏側の処理は概ね完了の見込み（詳細未記載）。</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3><span class="icon">build</span> APIの進捗とセキュリティ</h3>
+        <ul>
+          <li>API ManagementとFunctionsの<span class="marker">プライベート接続</span>で問題があったが、解決。</li>
+          <li>APIは<span class="underline">キー付きヘッダー</span>で呼び出し可能、JSONでレスポンス返却まで確認。</li>
+          <li>仕様整理後、<span class="marker">花岡さん</span>へ情報共有予定。</li>
+          <li>セキュリティ担保はAPI Managementで概ね可能だが不十分な点あり。<span class="underline">Front Doorの前段導入</span>を検討。</li>
+        </ul>
+      </section>
+
+      <div class="connector">
+        <div class="chip"><span class="icon">arrow_forward</span> API整備 → 仕様確定 → 関係者共有</div>
+      </div>
+
+      <section class="card">
+        <h3><span class="icon">monitor</span> ショールームモニター評価／音声認識の精度課題</h3>
+        <ul>
+          <li>ユーザー（例：Abcdfなど）の認識精度が<span class="marker">10%未満</span>となる事例あり。</li>
+          <li>データ品質の課題：<span class="underline">余計な発音</span>、他者の声混入、<span class="marker">漢字/ひらがな</span>の揺れ、単語取得の設計超過など。</li>
+          <li>検知方法の開発と、<span class="underline">運用チップス</span>の提供方針を検討中。</li>
+          <li>Microsoftへの仕様問い合わせ（言語モデルの挙動・適切な学習頻度など）を検討。</li>
+        </ul>
+        <div class="bubble">補足：データ集積と追加データ作成を継続中。結果の集計は未了の箇所あり。</div>
+      </section>
+
+      <section class="card">
+        <h3><span class="icon">translate</span> 漢字/ひらがな「食べる」問題の具体例</h3>
+        <ul>
+          <li>「食べる」を<span class="marker">ひらがな</span>で出したい事例がある一方、漢字での出力も存在。</li>
+          <li>ひらがな出力を安定化させるには、<span class="underline">複数の学習例</span>が必要（単一例だけでは不十分）。</li>
+          <li>同音異義語や既存語彙モデルとの競合が推定されるが、詳細仕様は未記載/未確認。</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3><span class="icon">devices</span> iOS関連の状況</h3>
+        <ul>
+          <li>ストアアプリを<span class="marker">Xcode 26</span>でビルド、<span class="underline">iOS 26</span>上で動作確認済（現状問題なし）。</li>
+          <li>デフォルト構成では動作、<span class="marker">特定DBインスタンス限定</span>の構成だと自宅（動作しない）になる可能性に言及。</li>
+          <li>iOS 26.1での挙動変化の可能性に触れ、<span class="underline">先手の対応方針</span>。</li>
+        </ul>
+        <div class="sketch-box">注：バージョンの表記は原文どおり。実在可否の検証は未実施。</div>
+      </section>
+
+      <section class="card">
+        <h3><span class="icon">smart_toy</span> LLM選定とグラレコ生成機能</h3>
+        <ul>
+          <li>コスト面から<span class="marker">GPT five / GPT five mini</span>中心に検討。<span class="underline">five miniは生成が速い</span>が、品質差は大きくないとの見立て。</li>
+          <li>5分ごとに<span class="marker">カード挿入</span>するHTML生成を試作。重複出力など不具合あり、修正中。</li>
+          <li>プロンプトの工夫：<span class="underline">前回出力に追加する方式</span>などを検討。頻度の可変（例：5分/15分）も検討。</li>
+          <li>ネットワーク失敗時は<span class="marker">デフォルト値</span>でリスク低減、取得できたら置換する案。</li>
+        </ul>
+      </section>
+
+      <div class="connector">
+        <div class="chip"><span class="icon">arrow_forward</span> 生成頻度の調整 → 品質/重複の抑制 → リリースへ</div>
+      </div>
+
+      <section class="card">
+        <h3><span class="icon">handwriting</span> YYProbe：手書き入力UIの検討</h3>
+        <ul>
+          <li>チャット画面に<span class="marker">手書きアイコン</span>を配置し、エリア切替でOCR→文字送信を想定。</li>
+          <li>小さいボタン問題への対策案：<span class="underline">会議一覧に「手書きモード」スイッチ</span>を追加（オンで以降は手書きエリアが常時表示）。</li>
+          <li>手書きエリアの<mark class="marker">画像保存</mark>モード検討。画像はテーブルに表示できるようセルを追加予定。</li>
+          <li>実装はUI先行、詳細処理は後追い。<span class="marker">柴田氏</span>に対応依頼あり。</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3><span class="icon">badge</span> 名鉄：実証実験の進捗</h3>
+        <ul>
+          <li>台本の厳しさに関する言及あり。<span class="marker">辞書と自動修正</span>はクライアント側対応待ち。</li>
+          <li>早口対策として<span class="underline">カスタムスピーチ</span>のデータ作成を進行。</li>
+          <li>翻訳機能：指定文章に対する訳返し、<span class="marker">DB保存とWebSocket組込み</span>まで完了（一部未記載あり）。</li>
+          <li>テキスト辞書のみでの先行検証案（病院/薬の辞書のような手法）。</li>
+          <li>当初9月末で実証予定だったが、集音の課題で延伸。<span class="underline">10月中旬の予算取り</span>に向け、翻訳データの投入/評価を提案。</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3><span class="icon">gavel</span> ライセンス対応／棚卸し</h3>
+        <ul>
+          <li>各アプリの<span class="marker">外部ライブラリ</span>の表示ルール（例：Apache 2.0等）遵守の指摘。</li>
+          <li>アプリ内/ホームページへ<span class="underline">使用ライブラリ名・バージョン・リンク</span>の掲載方針。</li>
+          <li>半年に1回の更新案。<span class="marker">12月末</span>までの対応を希望。</li>
+          <li>モバイルは標準のライセンス表示機能の活用案。デスクトップはサイト掲載の検討。</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3><span class="icon">event</span> スケジュール関連（原文ベース）</h3>
+        <ul>
+          <li>名古屋開催：<span class="marker">10月3日（金）13:00–15:00</span>。</li>
+          <li>5日（日）13:00〜、明（月）13:00–15:00の予定に言及（詳細不明）。</li>
+          <li>オンライン開催についても言及あり（詳細未記載）。</li>
+          <li>次回の返事は来週予定。明日・明後日は休み。</li>
+        </ul>
+        <div class="sketch-box">注：曜日・時刻の整合性確認は未実施。原文どおり記載。</div>
+      </section>
+
+      <section class="card">
+        <h3><span class="icon">compare_arrows</span> 異なる立場（漢字/ひらがなの扱い）</h3>
+        <div class="sketch-box" style="display:flex;gap:16px;flex-wrap:wrap;">
+          <div style="flex:1 1 280px;">
+            <p><strong>A：ひらがな出力を許容する立場</strong></p>
+            <ul>
+              <li>「食べる」をひらがなで出力しても問題ない場合がある。</li>
+              <li>用途により漢字/ひらがなの選択は柔軟でよい。</li>
+              <li>仕様上の厳密な統一は必須ではない可能性。</li>
+            </ul>
+          </div>
+          <div style="flex:1 1 280px;">
+            <p><strong>B：学習例の拡充を重視する立場</strong></p>
+            <ul>
+              <li>ひらがな出力を安定化には<span class="marker">複数例の学習</span>が必要。</li>
+              <li>既存語彙モデルとの競合や同音異義語の影響を考慮。</li>
+              <li>Microsoftへの仕様確認が望ましい。</li>
+            </ul>
+          </div>
+        </div>
+        <p style="font-size:13px;color:#0f172a;margin-top:8px;">共通点：出力の安定性・利用文脈の整合を重視。／相違点：許容の範囲 vs 学習・仕様確認の優先度。</p>
+      </section>
+
+      <section class="card">
+        <h3><span class="icon">playlist_add_check</span> ToDo／依頼事項（抜粋）</h3>
+        <ul>
+          <li>レイテンシー/サーバ側の追加調査。</li>
+          <li>API仕様整理後、<span class="marker">花岡さん</span>へ共有。</li>
+          <li>グラレコ生成の重複修正、プロンプト改善、頻度可変化。</li>
+          <li>YYProbe手書きUI：画像セル追加・OCR処理方針の検討（<span class="underline">柴田氏</span>対応）。</li>
+          <li>ライブラリの棚卸しとライセンス表示の統合（12月末目標）。</li>
+          <li>Microsoftへの問い合わせ（言語モデルの出力挙動・学習頻度）。</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3><span class="icon">info</span> 不明・未記載事項</h3>
+        <ul>
+          <li>数値詳細（ダウンロード合計、伸び率、価格等）：未記載/不明。</li>
+          <li>一部固有名詞・略称（例：Sr、BEV等）：未記載/不明。</li>
+          <li>イベントの正確な曜日・場所・URL：未記載/不明。</li>
+        </ul>
+        <div class="bubble">事実厳守のため、上記は原文の範囲でのみ記載。追加の裏取りや補完は行っていません。</div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
