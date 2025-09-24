@@ -1,0 +1,1028 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>会議メモ — 2025/09/24 16:00</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    :root{
+      --fashion-1:#AACE35;
+      --fashion-2:#2D957C;
+      --fashion-3:#1DB8DE;
+      --fashion-4:#F6F6F6;
+      --title-gradient-start: #1DB8DE;
+      --title-gradient-end: #2D957C;
+      --card-bg: rgba(255,255,255,0.62);
+      --card-border: rgba(255,255,255,0.45);
+      --text:#334155;
+      --heading:#1e40af;
+      --subtitle:#475569;
+    }
+    /* ベース */
+    html,body{height:100%;margin:0;background:var(--fashion-4);font-family:"UD Digi", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;color:var(--text);}
+    .wrap{max-width:1200px;margin:20px auto;padding:20px;}
+    header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px;gap:12px;}
+    .header-left{display:flex;align-items:center;gap:12px;}
+    .logo{width:48px;height:48px;flex:0 0 48px;}
+    .title{font-size:32px;font-weight:800;line-height:1.05;
+      background:linear-gradient(90deg,var(--title-gradient-start),var(--title-gradient-end));
+      -webkit-background-clip:text;background-clip:text;color:transparent;}
+    .subtitle{font-size:16px;color:var(--subtitle);margin-top:4px;}
+    .meta{font-size:14px;color:#555;text-align:right;min-width:180px;}
+    main{display:flex;flex-wrap:wrap;gap:16px;}
+    /* カード（グラスモーフィズム） */
+    .card{
+      flex:1 1 360px;
+      min-width:280px;
+      background:var(--card-bg);
+      border-radius:12px;
+      padding:14px;
+      box-shadow:0 6px 18px rgba(17,24,39,0.06);
+      border:1px solid rgba(0,0,0,0.04);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      transition:transform .25s ease,box-shadow .25s ease;
+      position:relative;
+      overflow:visible;
+    }
+    /* フォールバック（backdrop-filter非対応環境） */
+    @supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))){
+      .card{background:linear-gradient(180deg,rgba(255,255,255,0.96),rgba(255,255,255,0.94));border:1px solid rgba(0,0,0,0.06);box-shadow:0 4px 8px rgba(0,0,0,0.06);}
+    }
+    .card:hover{transform:translateY(-6px) scale(1.01);box-shadow:0 14px 30px rgba(17,24,39,0.12);}
+    .card h3{margin:4px 0 8px 0;font-size:18px;color:var(--heading);display:flex;align-items:center;gap:8px;}
+    .card h3 .material-icons{font-size:20px;color:var(--fashion-2);line-height:1;}
+    .card p{font-size:14px;color:var(--text);line-height:1.4;margin:0 0 8px 0;white-space:pre-wrap;}
+    .muted{font-size:13px;color:#6b7280;}
+    ul{margin:8px 0 0 18px;padding:0;color:var(--text);}
+    li{margin-bottom:6px;}
+    .tag{display:inline-block;background:rgba(26,32,44,0.04);color:#111;border-radius:10px;padding:4px 8px;font-size:12px;margin-right:6px;}
+    .kw{background:linear-gradient(90deg,#fff0 0%,#fff0 100%);padding:2px 4px;border-bottom:3px solid var(--fashion-1);display:inline-block;}
+    /* 小さな注記用のスタイル */
+    .note{font-size:13px;color:#475569;background:rgba(45,149,124,0.06);padding:6px;border-radius:8px;margin-top:8px;}
+    /* レイアウト補助 */
+    .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+    .col{flex:1;}
+    /* アイコン余白ルール */
+    .icon-space{margin-right:8px;}
+    /* リスト見出し */
+    .list-head{font-weight:700;color:var(--fashion-2);font-size:13px;margin-top:8px;margin-bottom:6px;}
+    @media (max-width:900px){
+      header{flex-direction:column;align-items:flex-start;gap:8px;}
+      .meta{text-align:left;}
+      .card{flex:1 1 100%;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="header-left">
+        <img class="logo" src="https://raw.githubusercontent.com/kaitang0228/yy-svg-library/refs/heads/main/logo_transparent.svg" alt="公式ロゴ" />
+        <div>
+          <div class="title">会議メモ</div>
+          <div class="subtitle">2025/09/24 16:00 の会話記録（要点まとめ）</div>
+        </div>
+      </div>
+      <div class="meta">
+        <div>日時：2025/09/24 16:00</div>
+        <div>出典：未記載</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <h3><span class="material-icons">schedule</span>概要</h3>
+        <p>会議日程：2025/09/24 16:00</p>
+        <p class="muted">議事録は会話の逐次書き起こしを要約。発言の断片や表現に不明点がある箇所は本文のまま反映しています。</p>
+      </section>
+
+      <section class="card">
+        <h3><span class="material-icons">mic</span>音声認識の状況</h3>
+        <p>・今月、"100007cm間"（原文表記）で過去最高が記録された箇所がある。  
+・ただし、7月に対しての伸び率は「少ないのではないか」という認識。</p>
+        <p class="note">原文の数値・表現はそのまま記載しています（"100007cm間" 等）。不明点は未記載。</p>
+      </section>
+
+      <section class="card">
+        <h3><span class="material-icons">download</span>ダウンロード数関連</h3>
+        <p>・現状の合計ダウンロード数について言及あり。詳細値は明確に記載されていない。  
+・発言中に「この三つを弱というところ」「もう本当に100」「Srのところ除去お願いします」との記述あり（原文のまま）。</p>
+        <p class="muted">注：具体的な対象（"三つ" が何を指すか等）は記載なし（未記載）。</p>
+      </section>
+
+      <section class="card">
+        <h3><span class="material-icons">bug_report</span>表示・変換の不具合（数字など）</h3>
+        <p>・「コンセプトがアラビア数字になってしまう問題」が報告されている。  
+・関連する別の問題（上の問題）と関係がある可能性が示唆され、修正中または修正作業に着手している旨の発言あり。  
+・修正時期は明示されていない（未記載）。</p>
+        <p class="muted">救済対応の確認を行う旨の発言あり（詳細は未記載）。</p>
+      </section>
+
+      <section class="card">
+        <h3><span class="material-icons">speed</span>レイテンシー／エラー対応状況</h3>
+        <p>・レイテンシーの問題が報告され、在庫対策などの対処が出たが、完了状況は不明（未記載）。  
+・スピーチSDKに関する問い合わせ（SRでの問い合わせ）があり、"10品超えるとエラーが出る"という現象の言及あり。対応・改善を試みている旨の発言。</p>
+        <p>・「タイムアウトしている」点の原因調査中。先週、仲間さんが対応し、関連データを収集中。  
+・収集データ（原文）：月/火/水で「9時8分」「9時7分」「9時4分」に同様のエラーが発生。個別の回線速度よりサーバ側の問題の可能性が高いと推測し、サーバ側調査を追加依頼している。</p>
+      </section>
+
+      <section class="card">
+        <h3><span class="material-icons">insights</span>その他の現状・確認事項</h3>
+        <p>・一部発言で「ツアールワ」「いる確認大阪市にしています」など断片的な表現があり、文脈が不明瞭な箇所がある（原文のまま）。</p>
+        <p>・「リマインドをします」「確認します そろそろのはずです」といった進行・フォローの発言あり（具体的担当・期日は未記載）。</p>
+      </section>
+
+      <section class="card">
+        <h3><span class="material-icons">map</span>マップアプリ／ウィッシュリスト（検討中）</h3>
+        <p>・マップ関連の話題あり。ウィッシュリスト（原文: ミシリスト/ミッシュリスト）について検討中との記述。  
+・Picks（ピックス）と dbc チームが関与している旨の言及。ユーザーからのウィッシュリスト要求に基づく対応を検討している。  
+・サイト上での掲載可否や、動画との関係など検討事項が残る（詳細未記載）。</p>
+      </section>
+
+      <section class="card">
+        <h3><span class="material-icons">task_alt</span>アクション項目（本文に明示された要点）</h3>
+        <ul>
+          <li>接続／エラー調査：仲間さんが先週対応・データ収集中（継続調査）。</li>
+          <li>サーバ側調査の追加依頼：9時台に発生する同様エラーの原因調査を依頼済み。</li>
+          <li>コンテンツ開発→データ収集→共有：開発したらデータを集めて投げる（発言のまま）。</li>
+          <li>リマインド・修正時期の確認：修正時期は未記載のため、担当にリマインド予定。</li>
+        </ul>
+        <p class="muted">担当未記載の項目は「未記載」として扱う必要があります。</p>
+      </section>
+
+    <section class="card">
+        <h3><span class="material-icons">summary</span>概要</h3>
+        <p>会議原文に基づくメモ。主な話題：音声認識の動向、ダウンロード数、表記（コンセプト）問題、スピーチSDKのエラー、レイテンシー／サーバ側のエラー確認。発言には一部不明瞭な箇所があるため、原文表記を尊重して記載。</p>
+        <p class="note">※ 数値や断片的発言は原文どおり記載し、解釈は最小限に留めています。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">hearing</span>音声認識の状況</h3>
+        <p>「今月100007cm間で過去最高が記録するものの、7月に対しては伸び率が少ない」との報告（原文）。</p>
+        <p class="note">原文中の数値表記「100007cm間」は意味が不明瞭のため、数値の正確性は未確認／不明。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">file_download</span>ダウンロード数関連</h3>
+        <p>発言：合計について「今 この三つを弱というところ」である旨。詳細の内訳や具体数は原文に記載なし（未記載）。</p>
+        <p>依頼事項（原文）：「Srのところ除去お願いします」— 対象や影響範囲の詳細は未記載。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">edit</span>表記（コンセプト）の問題と修正</h3>
+        <p>問題点：コンセプトが「アラビア数字」になってしまう件を指摘。修正時期は未確定／未記載。</p>
+        <p>対応：リマインド実施予定、関連の救済確認を行う旨。上位の別問題と関係がある可能性があると報告（詳細不明）。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">widgets</span>コンテンツ開発とデータ提出</h3>
+        <p>発言：コンテンツ開発後にデータを集めて提出済（原文）。フォローアップとして「これどうなってる？」と状況確認の依頼あり。</p>
+        <p class="note">提出データの内容・担当者・期限は原文に未記載。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">build_circle</span>スピーチSDK・エラー対応</h3>
+        <p>問い合わせ：SrでスピーチSDKに関する問い合わせあり（原文）。</p>
+        <p>挙動：おおむね「10品（項目）を超えると出るエラー」が報告され、改善措置を行ったとの発言。</p>
+        <p class="note">「10品超えると出るエラー」の詳細な再現手順やログは原文に未記載。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">timer</span>レイテンシー／サーバ側のエラー</h3>
+        <p>状況：レイテンシー問題に対する在庫（対策）案は出たが、対応状況は保留・確認中。</p>
+        <p>観測データ（原文）：接種IDが出る件に関してデータを収集中。月〜水で、9:08、9:07、9:04付近に同様のエラーが発生していると報告。</p>
+        <p>所見（原文発言に基づく）：個別のインターネット速度よりも「サーバ側（サバガン）」に問題がある可能性が高い、との判断。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">task_alt</span>次のアクション（原文ベース）</h3>
+        <ul>
+          <li>不明瞭な数値表記（例：「100007cm間」）の確認・訂正依頼</li>
+          <li>「Srのところ除去」依頼の対象明確化と実施</li>
+          <li>コンセプト表記の修正（アラビア数字化の是正）とリマインド</li>
+          <li>スピーチSDKのエラー再発防止・追加ログ収集</li>
+          <li>サーバ側エラーの詳細調査（特に9:04〜9:08のタイミング）</li>
+        </ul>
+        <p class="note">担当者・期限・詳細は原文に明記なし。各項目は原文の発言を基に整理したアクション案です。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">schedule</span>概要</h3>
+        <p><strong>会議日時：</strong>2025/09/24 16:00</p>
+        <p><strong>参加者：</strong>未記載/不明</p>
+        <p class="muted">本文は文字起こしのまま要約しています。意味が不明瞭な箇所は明記しています。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">mic</span>音声認識の状況</h3>
+        <p>発言抜粋：今月「100007cm間」で過去最高が記録されたが、7月に比べて伸び率は小さい可能性がある、という報告。</p>
+        <div class="note">原文の数値表現「100007cm間」は文脈不明のため要確認（原文のまま）。</div>
+        <div class="actions" aria-hidden="true">
+          <div class="action">要確認：数値の正確性</div>
+          <div class="action">要確認：比較対象（7月データ）</div>
+        </div>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">download</span>ダウンロード数・データ関連</h3>
+        <p>発言：ダウンロード数は「合計で今 この三つを弱というところ」との記載。詳細数値は未記載。</p>
+        <p>指示：<strong>「Srのところ除去お願いします」</strong>という要望あり（具体箇所は未記載）。</p>
+        <p class="muted">補足：詳細なダウンロード数のブレイクダウンは原文に記載なし。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">bug_report</span>不具合・修正事項</h3>
+        <ul class="points">
+          <li>「コンセプトがアラビア数字になってしまう問題」が報告され、修正対応中の旨。</li>
+          <li>上位の問題と関連があるかもしれないが、関連性は未確定（原文：関係があるかもしれない）。</li>
+          <li>「救済する確認のやつを」実施予定／対応中（詳細未記載）。</li>
+        </ul>
+        <div class="muted">注：発言の一部が断片的のため、誰が対応するか等は未記載。</div>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">timer</span>レイテンシー・SDK・エラー対応</h3>
+        <ul class="points">
+          <li>レイテンシー問題発生。対応策（在庫の対策）が出たが進捗は不明。</li>
+          <li>スピーチSDK関連：Srで問い合わせあり。<br>発言：「だいたい10品超えると出るエラーがある」→ 原文のまま（詳細な再現条件は未記載）。</li>
+          <li>タイムアウトやエラーの調査中：接種IDが出る件でデータを収集中。</li>
+        </ul>
+        <p class="muted">収集されたエラーログの例：9:08、9:07、9:04 に同様のエラーが出ている（原文の時間）。</p>
+        <div class="note">原文では「サバガン」「BEVに想定している」等の記述あり。意味が不明瞭な語は原文のまま記載：追加調査を依頼済み。</div>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">map</span>マップ・ウィッシュリスト（原文表記）関連</h3>
+        <p>発言要点：</p>
+        <ul class="points">
+          <li>「ミシリスト／フィッシュリスト（原文）」に関する検討と対応を実施中。</li>
+          <li>ユーザーからのリクエストを受け、サイトに情報を掲載する検討がある（埋め込みリンク／動画を利用する案）。</li>
+          <li>共通のデータ基盤（データ部署に登録）に情報を登録する方針。YouTubeを主要な媒体として想定。</li>
+        </ul>
+        <p class="muted">注：固有の機能名やチーム名は原文のまま（詳細は未記載）。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">camera_alt</span>Android カメラ / バリデーション</h3>
+        <p>発言（断片）：カメラ、Android側でバリデーションを受ける対応を始めてもらった、という報告。</p>
+        <p class="muted">詳細なテスト結果や担当者、スケジュールは原文に未記載。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">checklist</span>アクション（抽出された依頼）</h3>
+        <ul class="points">
+          <li>数値・表現の不明箇所を確認（例：「100007cm間」「サバガン/BEV」など）→ 要確認</li>
+          <li>「Srのところ除去」の実施（対象箇所の明示が必要）</li>
+          <li>接種IDやタイムアウトのログ収集継続／サーバー側調査を追加依頼</li>
+          <li>ウィッシュリスト関連の掲載方針決定（動画埋め込み、データ登録）</li>
+          <li>Androidカメラのバリデーション継続</li>
+        </ul>
+        <p class="muted">備考：個別の担当や期限は原文に未記載／要連絡。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">notes</span>未記載・不明点（要確認リスト）</h3>
+        <ul class="points">
+          <li>参加者一覧（未記載）</li>
+          <li>「100007cm間」の意味／正しい数値（要確認）</li>
+          <li>「サバガン」「BEV」の正確な意図（用語の確認）</li>
+          <li>ダウンロード数の内訳、対象となる「三つ」の詳細</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">summary</span>概要（要点）</h3>
+        <p>主要トピック：音声認識の状況、ダウンロード数の動向、SDK/レイテンシー関連の不具合、マップ（ウィッシュリスト）対応、API整備、ショールーム評価・イベント予定。</p>
+        <div class="kv">
+          <div class="tag">会議日: 2025/09/24</div>
+          <div class="tag" style="background:linear-gradient(90deg,var(--fash-3),var(--fash-2));">発言: 書き起こしベース</div>
+        </div>
+        <div class="note">原文に不明瞭な表現が多く、数値や一部用語は「未記載/不明」と表記しています。</div>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">mic</span>音声認識の件</h3>
+        <p>報告内容：今月（発言では「100007cm間」と記載）で過去最高を記録した旨の発言。ただし、その数値表記は不明瞭。<br>また、7月比では「伸び率が小さい」との指摘あり。</p>
+        <p class="small">数値の原文表記：「100007cm間」→ 意味不明のため「未記載/不明」としました。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">file_download</span>ダウンロード数について</h3>
+        <p>概要：合計ダウンロードに関する報告があり、特に「この三つを弱」という表現で一部項目の低迷が示唆された。<br>また「Srのところ除去お願いします」という依頼があったが、対象の具体的項目は未特定。</p>
+        <p class="small">詳細数値／対象項目：未記載/不明</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">bug_report</span>不具合・修正状況</h3>
+        <p>指摘された問題例：<br>・「コンセプトがアラビア数字になる問題」→ 修正／救済対応の確認が必要。<br>・上記と関連する別の問題を修正中で、関連性を調査中。</p>
+        <p class="small">担当者や期限の明記は原文に無し（未記載/不明）。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">swap_horiz</span>レイテンシー／SDK関連</h3>
+        <p>状況：レイテンシー問題や在庫（不具合）対策の報告があり、スピーチSDKに関する問い合わせが行われた。<br>報告の一部：アイテム数が約10点を超えるとエラーが出るケースがあり、改善対応を実施した旨の発言あり。</p>
+        <p class="small">詳細なエラー条件・改善内容：未記載/不明</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">report_problem</span>接続／エラー（調査中）</h3>
+        <p>発言より：ある種のエラーで「接種ID」が出る件についてデータを収集中。月〜水の9:08・9:07・9:04付近で同様のエラーが発生している。<br>発言者は「個別のインターネット速度よりサーバー側の問題の可能性が高い」と述べ、追加調査を依頼した。</p>
+        <div class="times">
+          <div class="time-badge">9:08</div>
+          <div class="time-badge">9:07</div>
+          <div class="time-badge">9:04</div>
+        </div>
+        <p class="small">用語（原文）：「接種ID」「サバガン」「BEV」など判読困難な表現あり → 原文どおり記載／要確認。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">map</span>マップ／ウィッシュリスト（検討中）</h3>
+        <p>内容：マップアプリ側でウィッシュリストに関するリクエストを受けており、動画（YouTube）埋め込みや共通ストレージ（「プロトストレージ2」記載）を利用してデータをデータ部門へ登録する案が検討されている。ユーザーコメントをサイト上に掲載する案もある。</p>
+        <p class="small">具体仕様・スケジュール：未記載/不明</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">camera_alt</span>カメラ／アプリ関連</h3>
+        <p>発言要旨：Androidカメラのバリデーションを受けてチェックインした旨の記述あり。<br>Macアプリについては久富さん単独では期限に間に合うか不確定で、現在メンバーが一部ジョインしているとのこと。</p>
+        <p class="small">担当・期限の詳細：未記載/不明</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">settings_ethernet</span>API整備状況</h3>
+        <p>現状：APIマネジメントとファンクション（Functions）の接続で問題が発生したが、解決に向かいAPIとして読める（JSONレスポンスを返すテスト段階）状態になっている。仕様整理後、花岡さんに情報共有予定。</p>
+        <p class="small">セキュリティはAPIマネジメントで対応予定。追加で「Front Door」的な前段を入れる案がある（原文）→ DBへのアクセス保護を意図。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">event</span>ショールーム評価・イベント予定</h3>
+        <p>記載された候補日時（原文ベース）：<br>・2025/10/03（金）13:00〜15:00（名古屋開催と記載）<br>・10/05（日）13:00（場所記載不明）<br>・翌週月曜日 13:00〜15:00（オンライン開催の言及あり）</p>
+        <p class="small">場所・確定情報は原文が混在しており、未確定部分は「未記載/不明」としています。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">check_circle</span>その他・アクション（抜粋）</h3>
+        <p>確認／依頼された事項（原文から抽出）：</p>
+        <p>・不具合の救済対応確認（担当：未記載）<br>・コンテンツ開発後にデータを収集して共有すること（発言あり）<br>・接続／エラーについて追加調査依頼（サーバー側調査）<br>・API仕様整理後、花岡さんへ情報提供</p>
+        <p class="small">担当者として言及のあった人物：花岡さん、久富君、仲間さん（発言あり）。具体的な期限・担当割当は原文に明記なし。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">help_outline</span>未確定／確認事項</h3>
+        <p>下記は原文が不明瞭のため確認が必要な点：</p>
+        <p>・「100007cm間」の意味と正確な数値<br>・「Srのところ除去」の対象範囲<br>・「接種ID」「サバガン」「BEV」等の用語の正確表記<br>・マップ/動画の公開仕様（埋め込み方法・ストレージ運用）</p>
+        <p class="small">これらは会議参加者に再確認することを推奨します。</p>
+      </section>
+<section class="card">
+        <h3><span class="icon-badge"><span class="material-icons">summarize</span></span>概要</h3>
+        <p>
+          会議は複数トピック（音声認識、ダウンロード数、スピーチSDK／レイテンシー、API、マップ／ミッシュリスト、アプリ検証、イベント）を扱う。以下は発言の逐語記録を整理した要点。原文に不明点が多いため、判読不能な箇所は原文表記／未記載として明記。
+        </p>
+        <div class="note muted">注：発言は逐語記録を基に整理。原文そのままの語句（意味不明な箇所）は括弧内に記載または「内容不明」と明示。</div>
+      </section>
+<section class="card">
+        <h3><span class="icon-badge"><span class="material-icons">mic</span></span>音声認識（課題と対応）</h3>
+        <ul>
+          <li>実績：原文「今月100007cm間で過去最高が記録するものの、7月に対しては伸び率が少ない」→ 数値表記や語句が不明瞭（原文そのまま）。(原文: "今月100007cm間")</li>
+          <li>認識品質の課題：
+            <ul>
+              <li>漢字⇄ひらがな変換の誤識別（例：'食べる'がひらがなで出る事例）</li>
+              <li>同音異義語の影響、辞書（医療用語等）整備や学習データの不足が指摘</li>
+              <li>単一事例（例: 石原さんが見つけた「食べる」1件）では学習が不十分 → 追加の例を複数投入する必要あり</li>
+            </ul>
+          </li>
+          <li>対応方針：誤認識の検知ロジック開発、追加データ収集（実証実験での事例取得）を実施予定。</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="icon-badge"><span class="material-icons">cloud_download</span></span>ダウンロード数・データ状況</h3>
+        <ul>
+          <li>発言の要旨：合計で「今 この三つを 弱というところ」など記録ありが、具体数値は不明（原文不明瞭）。</li>
+          <li>要求：原文 "もう本当に100 Srのところ除去お願いします。" → 対象・意味は不明のため要確認（原文引用）。</li>
+          <li>アクション：該当箇所の精査と担当確認が必要（未記載／要確認）。</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="icon-badge"><span class="material-icons">warning</span></span>スピーチSDK／レイテンシー／エラー</h3>
+        <ul>
+          <li>エラー傾向：発言で「だいたい10品超えると出るエラーがある」との報告。該当箇所は改善対応済とのこと。</li>
+          <li>タイムアウト／接続問題：ログで「9:08、9:07、9:04」に同様エラー発生。個別回線問題というよりサーバ側（原文: "サバガン"/"BEVに想定"）の問題と想定し、追加調査を依頼中。</li>
+          <li>担当対応：先週仲間さんが対応。一部はデータ収集中で詳細調査継続中。</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="icon-badge"><span class="material-icons">api</span></span>API進捗とセキュリティ</h3>
+        <ul>
+          <li>現状：APIは「呼べる／読める」状態になり、テスト用DBからJSON応答を返す段階まで到達。</li>
+          <li>課題：APIマネジメントとクラウドファンクションの接続で問題が発生し時間を要したが、現状は整理完了に近い。</li>
+          <li>セキュリティ：APIマネジメントで担保予定。ただし不足部分あり → 前段に"Front Door"を導入検討し、アクセス制御を強化する方針。</li>
+          <li>次工程：仕様整理後、花岡さんへ情報引き渡し予定（原文の要望に基づく）。</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="icon-badge"><span class="material-icons">map</span></span>マップ / ミッシュリスト（Wishlist）</h3>
+        <ul>
+          <li>状況：ミッシュ（ミッシュリスト）機能を検討中。ユーザーのリクエストを受けるフローを実装している旨。</li>
+          <li>動画関連：YouTube をメイン想定で、埋め込みリンクや共通ストレージ（プロトストレージ）への登録を検討中。</li>
+          <li>サイト表示：ユーザーコメントをサイト上へ掲載する案を検討。ステータス管理や埋め込み対応が今後の作業。</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="icon-badge"><span class="material-icons">devices</span></span>アプリ検証（Android / Mac）</h3>
+        <ul>
+          <li>Android：カメラ周りはバリデーション実施済み、チェックイン済の報告あり。</li>
+          <li>Macアプリ：担当（久富さん）で進めているが、期間的に間に合うか不確定。チーム参加は「半分ぐらいジョイン」しているとの記録。</li>
+          <li>アクション：進捗確認と優先度再設定が必要（未記載の部分は担当に確認）。</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="icon-badge"><span class="material-icons">schedule</span></span>ショールーム評価・イベント（予定）</h3>
+        <ul>
+          <li>予定（原文のまま整理）：
+            <ul>
+              <li>10月3日（金）13:00–15:00（名古屋開催）</li>
+              <li>5日（日）13:00（場所未明／原文不明瞭）</li>
+              <li>月曜日 13:00–15:00（オンライン開催予定と記録）</li>
+            </ul>
+          </li>
+          <li>評価対象のユーザー名例：原文にて "XA Abcdf" 等の言及あり（ユーザー名は原文通り）。</li>
+          <li>データ傾向：一部指標が10%未満に低下しているとの報告。追加データ取得・設計見直しを実施中。</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="icon-badge"><span class="material-icons">insights</span></span>データ品質・追加対応（要点）</h3>
+        <ul>
+          <li>問題例：余計な発音の混入、他人の声の混入、表記揺れ（漢字⇄ひらがな）などで認識結果が劣化。</li>
+          <li>対応案：誤検知検出の仕組みを作り、実証実験で得た事例をチップス（利用者向けガイド）として提供予定。</li>
+          <li>次対応：データの追加収集・分析を進め、必要に応じて外部（Microsoft等）へ設計確認を依頼する可能性あり（原文でその旨の言及あり）。</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">mic</span>音声認識の概況</h3>
+        <p>
+          ・今月、記録上「過去最高」を示す記載あり（原文に "100007cm間" の表記あり／意図不明）。<br>
+          ・ただし、7月と比べた「伸び率」は小さいとの感触。明確な数値は未整理。
+        </p>
+        <div class="dash" aria-hidden="true"></div>
+        <p class="muted">注: 元記録の一部表現が不明瞭なため、数値は未確定（未記載/不明）。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">cloud_download</span>ダウンロード数／指摘</h3>
+        <p>
+          ・ダウンロード数は「弱」という評価。合計の内訳は未記載。<br>
+          ・特定項目（原文表記: "Sr"）の除去要望あり（詳細ルール・対象は未記載）。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">bug_report</span>不具合／修正状況（要点）</h3>
+        <p>
+          ・「コンセプトがアラビア数字になってしまう」問題を確認中。<br>
+          ・複数問題の関連性を調査中（原文: 上の問題と関係がある可能性）。<br>
+          ・「救済する確認」の対応が議論され、既存の修正も進行中。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">speed</span>レイテンシー / スピーチSDK 関連</h3>
+        <p>
+          ・レイテンシー問題に伴う在庫対策の検討が出たが、対応は継続中。<br>
+          ・スピーチSDKで、"10品超えるとエラー" が発生する報告→改善対応実施済の記載あり。原因究明を継続。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">storage</span>サーバー側エラー（接種ID関連）</h3>
+        <p>
+          ・接種IDが出る件でデータ収集中。観測されたエラー発生時刻: 月〜水の9:08／9:07／9:04。<br>
+          ・これらは個別のインターネット速度より「サーバー側（Backend）」の問題と想定し、追加調査を依頼中。
+        </p>
+        <p class="muted">対応担当: 仲間さんが先週対応（原文）。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">api</span>API開発・運用状況</h3>
+        <p>
+          ・API管理とファンクションの接続で障害が発生したが、解決して「APIとして読める／参照できる」状態に到達。<br>
+          ・現状はテスト用データベースからJSONでレスポンスを返す段階。仕様整理後、花岡さんへ引き渡す予定。<br>
+          ・セキュリティはAPIマネジメントで担保予定。前段に「Front Door」を導入してDB保護する案が検討中。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">map</span>マップ / ミッシュリスト（検討項目）</h3>
+        <p>
+          ・"ミシリスト"（原文表記）の仕様検討中。ユーザーからのリクエスト受け付け機能あり。<br>
+          ・動画（YouTube想定）埋め込みや共通ストレージ（プロトストレージ）を利用する方向の検討。<br>
+          ・Android側のカメラ検証（バリデーション）を実施し、チェックイン済みの記載あり。Macアプリはスケジュール的に遅延の可能性。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">data_usage</span>データ品質・認識誤り（漢字⇄ひらがな問題）</h3>
+        <p>
+          ・例: 「食べる」が"ひらがな"として認識される事例あり。単一の事例だけでは学習が不足するため、誤認識が残る可能性。<br>
+          ・対策: 追加データ（複数事例）を準備して学習させる必要。認識挙動の設計・頻度に関してはMicrosoft等にも確認する方針。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">phone_iphone</span>iOS／ビルド動作状況</h3>
+        <p>
+          ・現状: Xcode26でビルドしたアプリがiOS26上で動作している確認あり。<br>
+          ・ただし、デフォルト構成や将来のマイナーバージョン（例: 26.1）で動作しなくなる可能性があるため、継続確認と対応検討を推奨。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">auto_awesome</span>LLM（モデル）検討状況</h3>
+        <p>
+          ・コストと速度を踏まえ、GPT-5系（GPT‑5 / GPT‑5 mini）を中心に検討。Gemini系列は初期コストが高めとの認識。<br>
+          ・GPT‑5 mini は生成速度が速く、フローによっては有利。品質差は限定的との見解だが、最終選択は用途（速度×コスト×品質）で判断予定。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">check_circle</span>次のアクション（要点）</h3>
+        <p>
+          ・API仕様の整理 → 花岡さんへ引き渡し（担当: 未記載／要確認）。<br>
+          ・サーバー側のエラー調査追加依頼（対象: Backendチーム）。エラー時刻のログを収集済み。<br>
+          ・認識精度改善のため追加データ収集（漢字⇄ひらがな等の事例を複数用意）。Microsoftへ設計確認を検討。<br>
+          ・ミッシュリスト周りは埋め込み・共通ストレージの設計を継続。Macアプリのスケジュール調整。
+        </p>
+        <p class="muted">注: 担当者名・期日は原文に明確記載がないため「未記載/要確認」としています。</p>
+      </section>
+<section class="card">
+        <h3><span class="icon"><i class="material-icons">today</i></span>概要</h3>
+        <p>
+          会議の文字起こしを元に要点を整理しました。参加者情報：未記載。発言には聞き取りづらい箇所があり、原文のまま記載できない部分は「未記載/不明」と明記しています。
+        </p>
+        <p class="note">原文の不明瞭な数値・語句は原則そのまま引用または「不明」と記載しています。</p>
+      </section>
+<section class="card">
+        <h3><span class="icon"><i class="material-icons">headset</i></span>音声認識の状況</h3>
+        <ul>
+          <li>今月の音声認識に関する記述：原文は「今月100007cm間で過去最高が記録」とあり、数値・単位の意味が不明瞭（原文どおり）。7月に比べ伸び率は小さいとの指摘。</li>
+          <li>誤認（漢字 ↔ ひらがな）や余計な発音、他人の声の混入などがあり、精度改善のための追加データ収集を依頼中。</li>
+          <li>単一の事例（例：「食べる」をひらがなで記録）では学習が不十分であり、複数事例の追加が必要との見解。</li>
+        </ul>
+        <p class="small">次アクション：追加データ収集、認識結果の検知ロジック開発、必要に応じてMicrosoft等へ設計確認（相談予定）。</p>
+      </section>
+<section class="card">
+        <h3><span class="icon"><i class="material-icons">bug_report</i></span>バグ／不具合報告</h3>
+        <ul>
+          <li>「コンセプトがアラビア数字になってしまう」等の表記バグが報告され、救済処理の確認中。</li>
+          <li>ある件は上の問題と関連する可能性があり、上側の修正を実施中（詳細は未記載）。</li>
+          <li>レイテンシー／タイムアウト問題：ログで「9:08／9:07／9:04」に同様のエラーが発生。個別回線問題よりサーバ側（ゲートウェイ等）の可能性が高く、追加調査を依頼中。</li>
+          <li>Speech SDK関連：複数アイテム（原文で「10品超えると出るエラー」）のエラーがあり、改善対応を実施済みまたは進行中。</li>
+        </ul>
+        <p class="note">対応担当：仲間さんが先週対応済の件あり。追加調査の結果待ち。</p>
+      </section>
+<section class="card">
+        <h3><span class="icon"><i class="material-icons">cloud</i></span>API・インフラ状況</h3>
+        <ul>
+          <li>API開発：一時的に接続（APIマネジメント ⇄ ファンクション）の問題で停滞したが、問題解消により「呼べる」状態に復旧。テスト用DBからJSONでレスポンスが返るレベルまで到達。</li>
+          <li>今後は仕様の整理を行い、花岡さんへ情報引き渡し予定。</li>
+          <li>セキュリティ：APIマネジメントでの担保を前提に、さらに「Front Door」相当を前段に入れる案が提示されている（DBへの直接アクセス回避）。</li>
+        </ul>
+        <p class="small">次アクション：仕様整理 → 花岡さんへ共有。フロントドア導入の可否検討。</p>
+      </section>
+<section class="card">
+        <h3><span class="icon"><i class="material-icons">map</i></span>マップ / Wishlist（ミッシュリスト）対応</h3>
+        <ul>
+          <li>Wishlist（ミッシュリスト）機能：ユーザーからのリクエストを受ける仕組みを検討中。動画・ステータス表示の仕組みづくりを進行。</li>
+          <li>データ格納：YouTubeをメインに想定しつつ、埋め込みリンク対応や共通ストレージへの登録（データ部署で管理）を計画中。</li>
+          <li>AndroidカメラのバリデーションやMacアプリの進捗については一部メンバーのリソース都合で遅延懸念（久富さん対応、状況は断片的）。</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="icon"><i class="material-icons">event</i></span>イベント（物件評価）予定</h3>
+        <ul>
+          <li>物件評価の開催案（原文より）：10月3日（金）13:00〜15:00（名古屋開催）</li>
+          <li>その他の開催予定として「5日（日）13:00〜」「翌月曜13:00〜15:00」およびオンライン開催の表記あり。※一部情報が不明瞭のため詳細は要確認。</li>
+        </ul>
+        <p class="note">（原文に不明瞭な箇所あり。正式日時・会場は別途確認要）</p>
+      </section>
+<section class="card">
+        <h3><span class="icon"><i class="material-icons">insights</i></span>データ品質・評価指摘</h3>
+        <ul>
+          <li>評価データ（ユーザー別集計）で一部ユーザーが10%未満の状況があり、設計見直しや追加データが必要。</li>
+          <li>誤認識例の収集と分類を進め、事例として取得して今後のモデル改善／ユーザー向けチップス提供に活かす。</li>
+          <li>同音異義語や漢字⇔ひらがななどの扱いはモデル側の挙動（頻度や学習サンプル数）に依存するため、MS等への確認を検討中。</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="icon"><i class="material-icons">smart_toy</i></span>GPTモデル検討（グラレコ自動生成）</h3>
+        <ul>
+          <li>対象：GPTシリーズを検討中。現在は「GPT-5」と「GPT-5-mini」を中心に比較。</li>
+          <li>要点：Gemini等と比較して、コストや生成品質の差は状況により変動。GPT-5は生成に時間がかかり、5-miniは高速という特性。</li>
+          <li>用途に応じて高速性（5-mini）を優先するか、品質（5）を優先するかを検討中。</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="icon"><i class="material-icons">autorenew</i></span>自動カード生成（5分間隔）に関する課題</h3>
+        <ul>
+          <li>現在の方式：5分ごとにHTMLでカードを生成・挿入する仕組み。重複出力や不自然な分割が発生している。</li>
+          <li>改善案例：毎回必ず新規カードを追加するのではなく、既存出力に追記・更新する方法や、前回結果を踏まえた差分追加のプロンプトを検討する。</li>
+          <li>運用：生成したHTMLの履歴を保存し（例：5分ごとのHTML）、Slackで共有して推移を確認する運用が提案された。</li>
+        </ul>
+        <p class="note">依頼：構造に無理がないかのチェック、出力の工夫（追記方式など）を試験してほしい。</p>
+      </section>
+<section class="card">
+        <h3><span class="icon"><i class="material-icons">phone_iphone</i></span>iOSビルド状況（Xcode / iOS26対応）</h3>
+        <ul>
+          <li>現状：Xcode26でビルドしたアプリはiOS26で動作することを確認。</li>
+          <li>懸念：将来のマイナーバージョン（例：26.1）で動作しなくなる可能性があるため、注意が必要。</li>
+          <li>対処案：デフォルトコンフィグが原因となる場合、必要な箇所のみインスタンス化する等の対処で安定化を図る。</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="icon"><i class="material-icons">task_alt</i></span>今後のアクション（要約）</h3>
+        <ul>
+          <li>API仕様整理 → 花岡さんへ引き渡し。</li>
+          <li>レイテンシー／タイムアウトの追加サーバ調査依頼中（ログ時刻：9:08／9:07／9:04）。</li>
+          <li>音声認識の追加データ収集・誤認検知ロジック開発・Microsoft等への設計確認（必要時）。</li>
+          <li>自動生成HTMLの改善：出力方式検討（追記／差分）と生成ログのSlack共有。</li>
+          <li>モデル選定（GPT-5 vs GPT-5-mini）：速度・コスト・品質のトレードオフを踏まえ検討継続。</li>
+        </ul>
+        <p class="note">担当者情報や細かい日程（未記載箇所）は会議原文が不明瞭なため別途確認してください。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">mic</span>音声認識：概況と課題</h3>
+        <p>
+- 今月の音声認識は「今月100007cm間で過去最高が記録するものの、7月に対して伸び率が少ない」という発言（原文のまま）。
+- 認識精度の課題：漢字⇄ひらがなの差異や同音異義語の誤認が発生。単一事例（「食べる」ひらがな例）があり、事例数が不足している可能性を指摘。
+- データ収集と追加事例の必要性、今後の検知開発の必要性が示された。
+        </p>
+        <span class="muted">未記載の点は「未記載/不明」として明示しています。</span>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">cloud_download</span>ダウンロード数・SR関連（断片メモ）</h3>
+        <p>
+- ダウンロード数について「合計で今この三つを弱というところ」との断片的発言（詳細数値は未記載/不明）。
+- 「本当に100 / Srのところ除去お願いします」という指示あり（文脈不明点あり）。
+- 詳細データ・対象項目は未記載のため、数値化は不可。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">bug_report</span>バグ・表示問題（アラビア数字化など）</h3>
+        <p>
+- 「コンセプトがアラビア数字になってしまう問題」など、表記変換の不具合報告あり。
+- 上の問題と別の件（救済確認）は関係があるかもしれないが、因果は未確定。
+- 対応：上側の問題を修正中、影響範囲は継続調査中。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">schedule</span>レイテンシー・スピーチSDK・エラー状況</h3>
+        <p>
+- レイテンシー問題の対策を実施中。スピーチSDKの価格問合せと、項目数が10品を超えると出るエラーの報告あり。
+- タイムアウトやエラー（接種IDが出る件）の調査でデータを収集中。発生時刻の例：9:08／9:07／9:04に同様エラーが確認され、個別の回線問題よりサーバ側（サバガン）に起因する可能性あり。追加調査を依頼している状況。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">map</span>マップ／ウィッシュリスト・動画連携</h3>
+        <p>
+- マップアプリ関連：ウィッシュリスト機能の検討中。ユーザーからのウィッシュリストリクエストを受けて処理するフロー検討あり。
+- 動画（YouTube想定）との統合を想定し、埋め込みリンクや共通のデータ格納（プロトストレージ）を検討中。
+- ステータス表示や動画埋め込みの方式は検討段階（詳細は未記載/不明）。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">camera_alt</span>カメラ（Android）・バリデーション / Macアプリ</h3>
+        <p>
+- Androidカメラのバリデーション作業を開始。チェックイン済みの報告あり（詳細は未記載）。
+- Macアプリについては担当（久富君）の期間的な問題で進捗遅延。現状「半分ぐらいジョイン」しているとの発言。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">api</span>API進捗とセキュリティ構成</h3>
+        <p>
+- APIは一度作成し、現在「呼べる／JSONでレスポンスを返す」状態まで到達（テスト用DBからの引き出し）。
+- リクエスト方法：メソッド・URL指定、ヘッダーにAPIキーを入れて呼ぶ想定（実装済みの試験あり）。
+- セキュリティ：API管理（APIマネジメント）での担保を想定。前段に「フロントドア」を追加し、データベースへのアクセス制御を強化する案を検討中。
+- 次フェーズ：仕様整理後に花岡さんへ情報引き渡し予定。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">people</span>ショールーム評価・イベント日程（メモ）</h3>
+        <p>
+- イベント（メモ）：10月3日（金）13:00–15:00（名古屋開催）との発言あり。
+- 他に「5日（日）13:00〜」「（翌）月曜日13:00–15:00」という断片的発言ありが、開催場所や日時の詳細は未記載/不明のため確定できない。
+- オンライン開催の言及あり（詳細未記載）。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">translate</span>翻訳機能・実証実験の進捗</h3>
+        <p>
+- 翻訳機能の方向性は確立しつつあり、受信した文章に対し翻訳を返す機能を開発中。
+- データ保存のためのDBとWebSocket組み込みは実施済みの部分あり。
+- 実証実験：当初「9月末までに終了」の予定だったが、集音の課題等で期間延長中。10月中旬に向けた準備（予算申請等）の要望あり。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">memory</span>GPTモデル検討・自動生成（グラフィックレコーディング関連）</h3>
+        <p>
+- GPT系の検討：GPT-5 と GPT-5-mini を中心に比較中。コストと生成速度のトレードオフ（GPT‑5が高コスト・遅め、5‑miniは高速）を考慮して選定を検討。
+- 会議中のグラフィックレコーディング生成は「何回も更新する」性質があり、速度と品質の兼ね合いを検討中。
+- 自動生成の実装：現在はHTMLを生成して5分ごとにカードを追加する方式。重複出力や不自然な箇所の不具合があり、修正中。生成の出力方法（差分追加など）改善を指示。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">schedule</span>生成ルール・運用指示（会議中メモ）</h3>
+        <p>
+- 5分ごとに必ずカード追加ではなく、前回出力のHTMLに差分を追加する等、生成方法の工夫を試す指示あり。
+- 最終出力は必要に応じて手動で手直ししても良いが、随時追加する仕組みは継続する方針。
+- ネットワーク未取得時のデフォルト値等、失敗リスクを考慮した設計の必要性も指摘。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">bug_report</span>名鉄実証実験関連（辞書・自動修正・カスタム音声）</h3>
+        <p>
+- 名鉄の実証実験：台本周りで厳しい点の指摘あり。辞書・自動修正プロンプト対応はクライアント側で調整中のため一時保留。
+- 早口傾向のある利用者向けに「カスタムスピーチ」を試すデータ作成を前田さんと進めている旨の報告あり。
+- 精度向上・自動修正の適用範囲は引き続き検討中。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">schedule</span>今後のアクション（要旨）</h3>
+        <p>
+- API仕様整理 → 花岡さんへ引き渡し（担当で進行）。
+- サーバ／レイテンシー調査の追加依頼（発生時刻ログあり：9:08／9:07／9:04を参照）。
+- 音声認識の事例追加と検知開発、Microsoft等への確認（要問い合わせ）。
+- 実証実験の期間調整：9月末終了予定は延長中、10月中旬の予算申請準備に合わせ進行。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">mic</span>音声認識 — 状況と主要課題</h3>
+        <p>今月は「過去最高を記録した」との発言あり（数値：<span class="marker">未記載/不明</span>）。ただし、7月に対する伸び率は小さいとのこと。</p>
+        <ul class="hand-list">
+          <li>認識課題：漢字⇄ひらがな変換の不整合、同音異義語、発音の癖、複数人の声が混入するケース</li>
+          <li>現状対策：データ収集の継続、追加学習データの準備、検知機能の開発、カスタムスピーチの検討（前田さんと協業）</li>
+          <li>検証・指摘：単一事例（例：ひらがな「たべる」）では学習が不十分 → 複数例の追加が必要</li>
+        </ul>
+        <p class="muted">（発言者：会議記録からの要約。ただし詳細な数値や参加者は未記載）</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">download</span>ダウンロード数の状況</h3>
+        <p>「合計が弱い」との認識。具体的な合計値・内訳は発言中に明確な数字が確認できなかったため、数値は<span class="marker">未記載/不明</span>。</p>
+        <ul class="hand-list">
+          <li>対応依頼：不要な項目（発言中の“Sr”等）除去の依頼あり</li>
+          <li>次アクション：数値の精査と不要項目の除外を実施すること</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">bug_report</span>不具合・修正の進捗</h3>
+        <p>報告されている主な不具合：</p>
+        <ul class="hand-list">
+          <li>「コンセプトがアラビア数字になってしまう」問題（表記揺れ）</li>
+          <li>その他の関連不具合と関連がある可能性 → 上位問題を修正中</li>
+          <li>修正時期：未確定（発言では「修正時期がまだ」との記載）</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">timer</span>レイテンシー / スピーチSDK 関連</h3>
+        <p>SDKやレイテンシーに関連したエラーやタイムアウト報告があり、調査中。</p>
+        <ul class="hand-list">
+          <li>「だいたい10品超えると出るエラーがある」との報告あり（対象・条件の詳細：<span class="marker">未記載/不明</span>）</li>
+          <li>タイムアウト／接続ID（接続ログ）でのエラーが観測：ログ上の発生時刻に9:08 / 9:07 / 9:04等の共通パターンあり → サーバー側の問題を想定し追加調査依頼中</li>
+          <li>対応：仲間さんが先週一次対応、追加データを収集して継続調査</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">map</span>マップ／ミッシュリスト（Wishlist）機能</h3>
+        <p>ミッシュリスト関連の要望と実装検討が進行中。</p>
+        <ul class="hand-list">
+          <li>ユーザーからのWishlistリクエストを受け、動画（主にYouTube）埋め込みや共通ストレージに登録する方向で検討</li>
+          <li>プロトタイプ：ストレージ／埋め込みリンクでの運用案を検討中（データ部署へ登録するフロー設計）</li>
+          <li>ステータスやコメントをサイト上へ反映する仕組みを検討</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">phone_iphone</span>iOS ビルド・動作確認</h3>
+        <p>Xcode 26でビルドしたアプリはiOS 26で問題なく動作している報告。ただし将来のマイナーバージョン（例：26.1）での不具合の可能性が指摘されています。</p>
+        <ul class="hand-list">
+          <li>対応項目：設定画面の不要箇所の削除、グループID関連処理は現在中断中（東京チーム）</li>
+          <li>アクション：動作継続確認とバージョンアップ時のリグレッションテストを推奨</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">cloud</span>API 開発状況</h3>
+        <p>APIはテスト用データで「呼べる（JSONレスポンス取得）」状態に到達。セキュリティや運用周りの整理が次工程。</p>
+        <ul class="hand-list">
+          <li>現状：ファンクションと接続し、リクエスト（メソッド・URL・ヘッダーのAPIキー）でJSONレスポンスを返すプロトタイプ完了</li>
+          <li>セキュリティ：APIマネジメントでの担保を想定。前段にFront Doorを入れる案を検討中（Front Door導入でDB保護）</li>
+          <li>次工程：仕様整理後、花岡さんに情報を渡して引き継ぐ</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">smart_toy</span>生成モデル（GPT/Gemini）評価</h3>
+        <p>コストと速度のトレードオフを考慮して検討中。</p>
+        <ul class="hand-list">
+          <li>候補：GPT‑5 と GPT‑5‑mini を中心に検討</li>
+          <li>比較ポイント：生成品質は大きく差がない可能性、GPT‑5‑mini は生成速度が速い、GPT‑5は時間がかかる</li>
+          <li>方針：状況に応じて両方の使い分けを検討（コスト・速度・クオリティのバランス）</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">auto_fix_high</span>自動カード生成（HTML出力）運用課題</h3>
+        <p>会議中に5分おきにHTMLカードを生成する仕組みの実装状況と課題。</p>
+        <ul class="hand-list">
+          <li>現状：まずHTMLを生成し、5分ごとに新しいカードを追加する方式 → 重複や不自然な出力が発生し修正中</li>
+          <li>改善提案：毎回完全追加ではなく、前回出力との差分を検出して追加する工夫（無駄な重複を減らす）</li>
+          <li>運用：HTML保存 → Slack共有（推奨）、生成ログの時系列での追跡を実施</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">train</span>実証実験（名鉄）・翻訳機能</h3>
+        <p>実証実験は当初「9月末まで」の予定だったが、集音の問題等で延長中。今後のスケジュール調整と翻訳機能の組み込みが進行中。</p>
+        <ul class="hand-list">
+          <li>状況：辞書や自動修正プロンプトはクライアント側で対応中で一部待ち状態</li>
+          <li>対応中：早口の話者対策としてカスタムスピーチを試行（前田さんと共同でデータ作成）</li>
+          <li>次期目標：10月中旬に向けた成果確認・予算取りのための提示を想定</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">edit</span>Toyota向け：手書き入力UI案（フィードバック）</h3>
+        <p>チャット画面から手書き入力に切替えるUI案を提示。フィードバックが4点届いている。</p>
+        <ul class="hand-list">
+          <li>提案内容：チャット画面のテキスト入力横に手書きアイコンを配置 → 押下でキーボードが手書きエリアへ切替</li>
+          <li>懸念点：ボタンが小さくて見つけにくい、会議一覧で手書きボードをオンにするスイッチ追加案（会議開始前に設定）</li>
+          <li>次アクション：ボタンサイズ／配置の再検討、スイッチ導入の可否を評価</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">check_circle</span>次のアクション（要点）</h3>
+        <ul class="hand-list">
+          <li>音声認識：追加データ収集と検知機能の開発を継続（前田さん含む）</li>
+          <li>レイテンシー/接続エラー：サーバー側ログ調査の追加依頼と原因切り分け（仲間さんの対応を継続）</li>
+          <li>API：仕様整理 → 花岡さんへハンドオーバー（セキュリティ周りはAPIマネジメント／Front Door検討）</li>
+          <li>自動生成：重複防止の差分追加ロジック検証、生成HTMLの保存とSlack共有運用確立</li>
+          <li>Toyota UI：ボタン設計見直しと会議一覧スイッチ案の評価</li>
+        </ul>
+        <p class="muted">※ 発言の一部は言葉足らず・断片的のため、数値や参加者名などは可能な限り原文に従い、明確でない部分は「未記載/不明」と記載しています。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">event</span>会議情報</h3>
+        <p>
+2025/09/24 16:00 に実施（会議冒頭のメモ："テストテスト"）
+発言は逐次メモ化・要点抽出済み。ただし多くの箇所で内容が断片的・口語的のため、原発言に忠実に要約しています。
+        </p>
+        <div class="muted">不明点は「未記載/不明」として表記しています。</div>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">mic</span>音声認識の状況</h3>
+        <p>
+・今月（発言内の数値表記あり）で「過去最高」を記録した旨の発言あり。ただし数値表現（例："100007cm間"）は文脈不明のため数値としては未確定：未記載/不明。  
+・7月比では伸び率が小さいとの認識が共有された。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">download</span>ダウンロード数・運用要望</h3>
+        <p>
+・ダウンロード数は「合計で今この三つを弱というところ」の旨で低調な項目があると報告。  
+・発言に基づく要望：特定の箇所（発言中の"Sr"表記）を除去してほしい、という依頼あり（詳細は担当へ要確認）。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">bug_report</span>バグ／修正関連（要点）</h3>
+        <p>
+・「コンセプトがアラビア数字になってしまう問題」を報告 → 修正中／リマインド予定。  
+・該当問題と別件（上の問題）に関係がある可能性が示唆されているため、関連調査を継続。  
+・「救済する確認」の作業が必要との発言あり。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">timer</span>レイテンシー / エラー調査</h3>
+        <p>
+・レイテンシーや接続エラーが報告され、特定の時間帯（例：9:08、9:07、9:04）に同様のエラーが発生しているログ確認中。  
+・発言では「個別のインターネット速度よりサーバー側（サバガン）に原因がある可能性」が示され、追加調査依頼中。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">map</span>マップ / ウィッシュリスト ／動画連携</h3>
+        <p>
+・ウィッシュリスト（ミッシュリスト）に関する対応を検討中。ユーザーのリクエストやコメントをサイト上に掲載する案あり。  
+・動画（YouTube）埋め込みの共通ストレージまたはリンク運用を想定しており、データ部門へ登録する計画。  
+・ステータス管理・プロトタイプの格納方式は未確定（埋め込みリンク等を検討）。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">videocam</span>カメラ / iOS・Android の状況</h3>
+        <p>
+・Android側でのバリデーションを実施しチェックイン済の箇所あり。  
+・Macアプリ（macアプリ）のスケジュールに不安があり、担当（久富君ほか）が一部対応中で参加が半分程度の状況。  
+・iOS関連：Xcode 26でビルドしたアプリはiOS 26で問題なく動作しているが、将来的なマイナーバージョン（例：26.1等）による影響は未確定。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">api</span>APIの進捗とセキュリティ</h3>
+        <p>
+・APIとファンクションの接続で障害があり一時遅延したが、現時点で「APIとして読める／見れる状態」まで到達。  
+・仕様整理後に花岡さんへ情報を引き渡す予定。  
+・セキュリティはAPIマネジメントで担保見込みだが、前段に「Front Door」等の導入検討があり、確保できない部分の確認中。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">model_training</span>AIモデル検討（GPT系）・自動生成機能</h3>
+        <p>
+・コストと速度の観点でGPTシリーズを検討中。特にGPT‑5とGPT‑5miniにフォーカス（発言のまま）。  
+・生成速度はGPT‑5miniが速く、GPT‑5は生成に時間がかかるため、どちらを中心にするか検討中。  
+・会議の自動カード生成は5分ごとに新しいカードをHTMLに挿入する仕様で動作中だが、重複出力や不自然な箇所があり修正実施中。出力履歴の共有を要望。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">translate</span>音声認識精度・データ品質の課題</h3>
+        <p>
+・漢字 ⇄ ひらがなの変換で誤認識が起きている。例：発言中の「食べる」関連の事例は発言が1例のみのため学習上不足（石原君が1件確認）。  
+・複数話者や不要ノイズが混入したデータがあり、精度低下の原因と想定。検知ロジックの開発が必要。  
+・Microsoft等外部ベンダーへの問い合わせを検討する発言あり。カスタムスピーチで高速話者に対応する試験を前田君と進めている。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">event_available</span>実証実験・翻訳機能の状況</h3>
+        <p>
+・翻訳機能（音声→認識→翻訳）の実装を進めており、DBとWebSocket組み込みまで進行中。  
+・当初は9月末までの実証実験終了予定だったが、集音等の課題で期間延長中。  
+・来年度の予算獲得に向け、10月中旬頃までに翻訳部分のデータ蓄積と出力状況を確認する計画が示された。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">gesture</span>手書き入力（トヨタ案件）— UI案とフィードバック</h3>
+        <p>
+・チャット画面に手書きアイコンを置き、押すとテキスト入力エリアが手書きエリアに切替わる案を提示。  
+・トヨタから4点のフィードバックあり（要点）：ボタンサイズ／位置、手書きモードのオン切替スイッチ案、手書きを画像として保存・共有するモード提案、OCRでテキスト送信するフロー検討。  
+・提案の一つに「会議一覧で一度オンにするスイッチ」を増やし以降の操作を簡素化する案あり。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">task</span>発言内で挙がった主なアクション（抜粋）</h3>
+        <p>
+・データ収集：コンテンツ開発後、データを集めて共有する（発言: "データ集めて投げてくれたら"）。  
+・サーバー側調査の追加依頼（レイテンシー／エラー）。  
+・花岡さんへAPI仕様を渡す（仕様整理後）。  
+・前田君とカスタムスピーチ用データ作成の進行。  
+・トヨタ向けに手書きUI案を投げてフィードバックを反映。  
+・柴田君へいくつかの優先課題の対応依頼（発言あり）。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">help_outline</span>未確定／不明な点（要確認）</h3>
+        <p>
+・冒頭の数値表現（例："100007cm間"）は文脈不明のため数値として扱っていません：未記載/不明。  
+・一部発言は断片的で主語・対象が曖昧な箇所があるため、担当者確認が必要（該当箇所は原文の口語表現に基づく）。  
+・具体的な期日・担当の確定は会議中に明示されていない箇所があるため、次回確認推奨。
+        </p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">mic</span>音声認識・ダウンロード数</h3>
+        <p>・発言：今月は過去最高を記録した旨の言及がありましたが、7月と比べると伸び率は小さい可能性が指摘されました。</p>
+        <p>・原文引用（文脈不明）："今月100007cm間で過去最高が記録するものの" — 詳細は不明のため補記なし。</p>
+        <p>・ダウンロード数に関しては「合計でこの三つを弱」という趣旨の発言と、"100 Srのところ除去お願いします" 等の対応指示がありました。具体数値・対象は未記載。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">bug_report</span>不具合・修正（数字表記など）</h3>
+        <p>・「コンセプトがアラビア数字になってしまう問題」が報告され、救済（修正）対応の確認が行われています。</p>
+        <p>・この問題と別の上位の問題が「関係があるかもしれない」との指摘があり、上の問題を直しているため関連調査中です。</p>
+        <p class="muted">※ 状況や担当は原文に明記なし（未記載/不明）。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">timer</span>レイテンシー / 接続エラー</h3>
+        <ul>
+          <li>レイテンシー問題への対策が挙がっている旨の報告。</li>
+          <li>スピーチSDK関連で「10品を超えると出るエラー」が報告され、改善作業が行われた経緯あり。</li>
+          <li>接種IDが出る件でデータ収集中。月・火・水の9:08／9:07／9:04付近で同様のエラーが出ており、個別回線というよりサーバー側の問題と想定、追加調査依頼中。</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">map</span>マップ / ミッシュリスト（Wishlist）</h3>
+        <p>・ミッシュリスト（wishlist）について検討中。PicksチームとDBCチームでユーザーからのリクエスト対応を進めているとの報告。</p>
+        <p>・ユーザーコメントをサイト上に掲載する検討（埋め込みリンク／YouTube併用の想定）。プロトタイプやストレージ方針を整理してデータ部署へ登録する予定。</p>
+        <p class="muted">※ 詳細なスケジュール・担当は未記載/不明。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">devices</span>Android / iOS / カメラ関連</h3>
+        <ul>
+          <li>Android側：カメラのバリデーションを受け、チェックイン済みの記述あり（詳細未記載）。</li>
+          <li>Macアプリ：久富君が対応中。期間的に間に合うか懸念、参加は約半分の状況と報告。</li>
+          <li>iOS：Xcode 26でビルドしたストアアプリがiOS26上で動作しているが、将来のマイナーアップデート（例：26.1）で動かなくなる可能性があり、対応方針を継続検討中。</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">api</span>API状況</h3>
+        <p>・APIマネジメントとファンクションの接続で詰まっていたが、問題を解決し「APIとして読める・見れる」状態になっているとの報告。</p>
+        <p>・仕様整理後、花岡さんへ情報を渡す予定。リクエストはメソッドとURL、ヘッダーにAPIキーを入れて呼び出す形式。</p>
+        <p>・セキュリティはAPIマネジメントで担保する想定。前段にFront Doorを入れてデータベースへ接続する案がある（詳細は未記載）。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">smart_toy</span>GPTモデル検討・生成関連</h3>
+        <ul>
+          <li>コストの観点からGPT-5系（GPT five / GPT five-mini）を中心に検討。</li>
+          <li>GeminiとGPTで生成クオリティは大きく変わらないが、GPT-5とGPT-5-miniでは生成速度に差があり、miniの方が高速との報告。</li>
+          <li>会議中のグラフィックレコーディング的な連続生成を想定すると、速度面のトレードオフ検討が必要。</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">widgets</span>自動生成機能（HTML/カード挿入）</h3>
+        <p>・現状は「HTMLを生成→5分ごとに新しいカードを挿入」する方式で実装中。</p>
+        <p>・不具合として、重複出力や不自然な位置での挿入が発生しており、修正対応中。生成履歴（HTML保存）をSlack共有して推移を確認する要望あり。</p>
+        <p>・生成の工夫（前回出力を踏まえた追加のみ行う等）を試してほしい、との指示あり。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">translate</span>実証実験（名鉄）・翻訳・辞書</h3>
+        <ul>
+          <li>実証実験は当初「9月末まで」に終える予定だったが、集音等の問題で期間が延長中。</li>
+          <li>翻訳機能：音声認識→翻訳の流れを想定し、翻訳データを保存するDBとWebSocket組み込みまで進めているとの報告。</li>
+          <li>専門辞書（医療等）を使った場合の効果が高く、カスタム辞書やカスタムスピーチの検討（前田君とデータ作成）を進行中。</li>
+          <li>次段階は10月中旬の外向け提案に向け、翻訳精度とデータ状況を整える予定。</li>
+        </ul>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">edit</span>手書きモード（チャット画面）設計フィードバック</h3>
+        <p>・チャット画面に手書きアイコンを追加し、押下で入力エリアが手書きエリアに切り替わる案を提示。トヨタ側へデザイン案を返送しフィードバックを取得済み。</p>
+        <p>・受けたフィードバック例：ボタンが小さい、会議開始時に手書きモードをオンにするスイッチを追加する案（会議一覧で一括設定）等。</p>
+        <p>・画像として保存し共有するモードや、手書きをOCRでテキスト化して送信する機能の要望あり。画像表示に関してはリスト側のテーブルセル追加で対応可能との話。</p>
+        <p class="muted">担当：柴田君へいくつかタスク依頼（原文記載）。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">insights</span>評価・ショールーム等</h3>
+        <p>・ショールームのモニター評価やスケジュール（例：名古屋・オンライン等）の言及あり。具体日程の一部は未整理（原文に断片あり）。</p>
+        <p class="muted">※ 詳細日時・参加者等は未記載/不明。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">gavel</span>ライセンス表示対応</h3>
+        <p>・各アプリで使用しているライブラリ一覧を整理し、ホームページやアプリ内でライセンス表記を行う必要がある旨の指摘があった。</p>
+        <p>・一部アプリでライセンス表記が不足しているとの指摘。対応を進めている（具体ライセンス名や対象は原文に断片的記載のため、詳細は未記載）。</p>
+      </section>
+<section class="card">
+        <h3><span class="material-icons">check_circle</span>その他・未整理/不明箇所</h3>
+        <p>・原文は雑談や断片的な発言、途切れ等が多く、意味が取りにくい箇所が複数あります。例："ツアールワ いる確認大阪市にしています" や "100007cm間" 等は文脈不明のため詳細は未記載。</p>
+        <p>・明確化が必要な点は別途発言者へ確認を行うことを推奨します（対象・担当未記載）。</p>
+      </section>
+</main>
+  </div>
+</body>
+</html>
